@@ -8,6 +8,8 @@ A live, read-only dashboard for a [Zebedee](https://github.com/ianscrivener/zebe
 
 It updates itself: the server watches `.records/` and pushes a server-sent event whenever anything changes.
 
+
+
 ## Stack
 
 Python standard library (`http.server`) + [htmx](https://htmx.org) 2 with its SSE extension, vendored in `static/` (works offline). No build step and nothing to install. It imports the Zebedee helper (`zebedee/zcli.py`) to read records, so there's one loader, not two.
@@ -29,3 +31,6 @@ It listens on `127.0.0.1` only. Records can be private, so `--host 0.0.0.0` is o
 ## Licences
 
 MIT (this repo). htmx and htmx-ext-sse are BSD Zero-Clause (`static/`).
+
+
+---
