@@ -16,6 +16,12 @@ Python standard library (`http.server`) + [htmx](https://htmx.org) 2 with its SS
 
 **Read-only.** It never writes records; agents write only through `just z-*`.
 
+## Add it to a project
+
+Open your agent at the project root and say: *"Follow https://github.com/ianscrivener/zebedee-gui/blob/main/INSTALL_PROMPT.md"*. It checks the project uses Zebedee, adds the submodule and the `just` recipe if missing, smoke-tests it, and leaves everything staged for you to commit.
+
+New projects from the [Zebedee seed](https://github.com/ianscrivener/zebedee) already include it.
+
 ## Use
 
 It lives in a Zebedee project as a git submodule at `zebedee/gui`:
